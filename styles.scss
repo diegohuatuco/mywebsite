@@ -1,0 +1,254 @@
+$color-yellow:#F8D97F;
+$color-black:#333A38;
+$color-green:#009A59;
+$color-yellow-light:#FFFDEB; 
+
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: $color-black;
+}
+
+a{
+    text-decoration: none;
+}
+
+.dh-web-background-black{
+    background-color: $color-black;
+    border-bottom: 4px solid $color-yellow;
+}
+.dh-web-container{
+    max-width: 1044px;
+    margin-left: auto;
+    margin-right: auto;
+    h1{
+        color:$color-yellow;
+        padding: 0;
+        margin: 0;
+        text-transform: uppercase;
+    }
+}
+
+h2{
+    margin: 0;
+    font-size: 50px;
+    padding: 0 20px;
+}
+
+h2:nth-child(even){
+    color: $color-green;
+}
+
+h2:nth-child(odd){
+    font-size: 40px;
+}
+
+h3{
+    padding: 0 20px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+h4{
+    margin: 0;
+}
+
+p{
+    margin: 0;;
+}
+
+.dh-web-wrapper-h1-nav{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    nav{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-left: auto;
+        display: flex;
+        align-items:center;
+        a{
+            margin-left: 20px;
+        }
+    }
+}
+
+
+.dh-web-wrapper-h2{
+    margin: 100px 0 100px 0;
+}
+
+.dh-wrapper-img-title-portfolio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    padding: 0 20px;
+    p{
+        font-size: 13px;
+    }
+    h4{
+        font-size: 18px;
+    }
+}
+
+.background-color-yellow-light{
+    padding: 60px 0;
+    background-color: $color-yellow;
+    margin-bottom: 90px;
+}
+
+.background-color-yellow{
+    padding: 60px 0;
+    background-color: $color-yellow;
+    margin-top: 90px;
+}
+
+.dh-wrapper-aboutme-img, .dh-web-contact, .dh-web-skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    padding: 0 20px;
+}
+
+.dh-web-skills{
+    span{
+        margin-bottom: 5px;
+        display: inline-block;
+        font-size: 18px;
+        margin-left: 5px
+    }
+}
+
+.dh-web-skills-box-progress{
+    border:1px solid #009A59 ; height: 15px;
+    div{
+        height: 13px; background-color: #009A59
+    }
+}
+
+.dh-wrapper-aboutme-img{
+    margin-bottom: 60px;
+    p{
+        margin-bottom: 20px;
+
+    }
+    p:first-child{
+        margin-top: 30px;
+    }
+}
+
+.dh-web-img{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+    width: 100%;
+    border: 6px solid white;
+}
+
+.dh-web-contact{
+    a{
+        color: $color-black;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+    h4{
+        margin-bottom: 10px;
+        font-weight: 500
+    }
+}
+
+.dh-web-links-contact{
+    div{
+        margin-bottom: 15px;
+    }
+    a{
+        font-size: 24px;
+    }
+    svg{
+        position: relative;
+        bottom: 3px;
+    }
+}
+
+.dh-web-wrapper-h1-nav{
+    a{
+        color: $color-yellow;
+    }
+}
+
+.dh-web-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background-color: $color-black;
+    color: $color-yellow;
+    font-size: 14px;
+}
+
+@media screen and (max-width:1044px){
+    .dh-web-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:860px){
+    .dh-web-contact{
+        grid-template-columns: 1fr
+    }
+
+    .dh-web-links-contact{
+        display: flex;
+        flex-wrap: wrap;
+        a{
+            margin-right: 40px;
+        }
+    }
+}
+
+@media screen and (max-width:710px){
+    .dh-web-skills{
+        grid-template-columns: 1fr;
+
+    }
+
+    .dh-wrapper-aboutme-img{
+        margin-bottom: 60px;
+        p{
+            margin-bottom: 15px;
+    
+        }
+        p:first-child{
+            margin-top: 0;
+        }
+}
+}
+@media screen and (max-width:550px){
+    .dh-wrapper-img-title-portfolio{
+        grid-template-columns: 1fr;
+    }
+
+    .dh-wrapper-aboutme-img{
+        grid-template-columns: 1fr;
+    }
+
+    .dh-web-links-contact{
+            a{
+                font-size: 18px;
+            }
+    }
+
+    .dh-wrapper-img-title-portfolio{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
