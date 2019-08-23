@@ -247,6 +247,20 @@ p{
     .dh-wrapper-img-title-portfolio{
         grid-template-columns: 1fr;
     }
+
+    .dh-web-wrapper-h1-nav{
+        align-items: flex-start;
+        flex-direction: column;
+        nav{
+            margin-bottom: 10px;
+            margin-top: 10px;
+            margin-left: 0;
+            a{
+                margin-left: 0;
+                margin-right: 20px;
+            }
+        }
+    }
 }
 
 
