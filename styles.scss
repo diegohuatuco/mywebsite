@@ -238,6 +238,13 @@ p{
 }
 
 @media screen and (max-width:860px){
+    #topBtn{
+        width: 30px;
+        height: 30px;
+        padding-top: 0;
+        right: 20px;
+        bottom: 80px;
+    }
     .dh-web-contact{
         grid-template-columns: 1fr
     }
@@ -271,6 +278,10 @@ p{
 @media screen and (max-width:550px){
     .dh-wrapper-img-title-portfolio{
         grid-template-columns: 1fr;
+    }
+
+    .dh-web-skills span{
+        font-size: 16px;
     }
 
     .dh-wrapper-aboutme-img{
@@ -311,10 +322,22 @@ p{
         text-align: left;
         padding-left: 20px;
     }
-
-
 }
 
+@media screen and (max-width:320px){
+    h2{
+        font-size: 40px;
+    }
+    .dh-web-links-contact{
+        a{
+            margin-right: 20px;
+            font-size: 16px;
+        }
+    }
+}
 
-
-
+@media screen and (max-width:768px){
+    .dh-wrapper-aboutme-img p:first-child{
+        margin-top: 0;
+    }
+}

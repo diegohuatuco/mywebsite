@@ -60,7 +60,7 @@
                     <div>
                         <img class="dh-web-img" src="design-portfolio.png" alt="">
                         <h4>Diseño Gráfico</h4>
-                        <p>Tarjetas personales, flyers, social media - Impreso y Digital</p>
+                        <p>Tarjetas personales, flyers, Social media - Impreso y Digital</p>
                     </div>
                 </div>
             </div>
@@ -182,20 +182,18 @@
     <!-- End Footer -->
     <script>
         $(document).ready(function(){
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 150){
+            $('#topBtn').fadeIn();
+        } else{
+            $('#topBtn').fadeOut();
+        }
+        });
 
-$(window).scroll(function(){
-  if($(this).scrollTop() > 150){
-    $('#topBtn').fadeIn();
-  } else{
-    $('#topBtn').fadeOut();
-  }
-});
-
-$("#topBtn").click(function(){
-  $('html ,body').animate({scrollTop : 0},500);
-});
-});
-
+        $("#topBtn").click(function(){
+        $('html ,body').animate({scrollTop : 0},500);
+        });
+        });
     </script>
 </body>
 </html>
