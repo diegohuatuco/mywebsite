@@ -71,6 +71,10 @@ p {
 
 .dh-web-wrapper-h2 {
   margin: 100px 0 100px 0; }
+  .dh-web-wrapper-h2 span {
+    padding: 0 20px;
+    display: block;
+    font-size: 13px; }
 
 .dh-wrapper-img-title-portfolio {
   display: -ms-grid;
